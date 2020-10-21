@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab3</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="forms-section">
+  
+  <div class="forms">
+    <div class="form-wrapper is-active">
+      <button type="button" class="switcher switcher-login">
+        Login
+        <span class="underline"></span>
+      </button>
+      <div class="form form-loginr">
+        <fieldset>
+          <legend>Please, enter your email and password for login.</legend>
+          <div class="input-block">
+            <label for="login-email">E-mail</label>
+            <input id="login-email" type="email" required>
+          </div>
+          <div class="input-block">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-login" onclick="login()">Login</button>
+      </div>
+    </div>
+    <div class="form-wrapper">
+      <button type="button" class="switcher switcher-signup">
+        Sign Up
+        <span class="underline"></span>
+      </button>
+      <div class="form form-signupr">
+        <fieldset>
+          <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+          <div class="input-block">
+            <label for="signup-name">Name</label>
+            <input id="signup-name" type="text">
+          </div>
+          <div class="input-block">
+            <label for="signup-email">E-mail</label>
+            <input id="signup-email" type="email" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password">Password</label>
+            <input id="signup-password" type="password" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password-confirm">Confirm password</label>
+            <input id="signup-password-confirm" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-signup" onclick="sub()">Continue</button>
+      </div>
+    </div>
+    <div class="form-wrapper">
+      <button type="button" class="switcher switcher-signup">
+        recovery
+        <span class="underline"></span>
+      </button>
+      <div class="form form-forgot">
+        <fieldset>
+          
+          <div class="input-block">
+            <label for="forgot-name">Name</label>
+            <input id="forgot-name" type="text">
+          </div>
+          <div class="input-block">
+            <label for="forgot-email">E-mail</label>
+            <input id="forgot-email" type="email" required>
+          </div>
+          <div class="input-block">
+            <label for="forgot-password">Password</label>
+            <input id="forgot-password" type="password" required>
+          </div>
+          <div class="input-block">
+            <label for="forgot-new-password">New password</label>
+            <input id="forgot-new-password" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-signup" onclick="unlock()">Continue</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
